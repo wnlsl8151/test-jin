@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>진심타코야끼</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="http://10billioncoffee.co.kr/theme/basic/css/swiper.css?ver=191202">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    
+
+    <style>
+
+        html{
+            scroll-behavior: smooth;
+        }
+
+        #header{
+            display: flex;
+            justify-content: start;
+            background-color: #fff;
+            /* border: 1px solid #000; */
+            position: fixed;
+            width: 100%;
+            z-index: 999;
+        }
+
+        .logo-img img{
+            width: 35%;
+            margin-left: 50%;
+            margin-top: 20px;
+        }
+
+        .nav ul{
+            display: flex;
+            /* justify-content: space-around; */
+            margin-top: 30px;
+        }
+        
+        .nav ul li{
+            margin-right: 80px;
+        }
+
+        #sec01{
+            position: relative;
+            width: 100%;
+            height: 920px;
+            margin: 0 auto;
+            background-color: #0f1249;
+        }
+
+        .youtube{
+            position: absolute;
+            margin-top: 10%;
+            margin-left: 13%;
+        }
+
+        .sec01-txt{
+            position: absolute;
+            color: #fff;
+            top: 25%;
+            right: 20%;
+            font-size: 70px;
+            font-weight: 600;
+        }
+
+        .sec01-txt span{
+            color: #ed8578;
+            font-weight: 900;
+            font-size: 80px;
+        }
+
+        .sec01-img1{
+            position: absolute;
+            width: 30%;
+            top: 52%;
+            left: 50%;
+        }
+
+        .sec01-img2{
+            position: absolute;
+            width: 30%;
+            top: 52%;
+            right: 4%;
+        }
+
+        .sec02-img{
+            width: 75%;
+            margin: 0 auto;
+            margin-bottom: 100px;
+        }
+
+        .sec03-img{
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .sec04-img{
+            width: 75%;
+            margin: 0 auto;
+            margin-bottom: 150px;
+        }
+
+        #sec05{
+            margin: 0 auto;
+            width: 75%;
+            margin-bottom: 150px;
+        }
+
+        #sec05 h2{
+            position: absolute;
+            font-size: 30px;
+            text-align: center;
+            color: #4A4F9F;
+            font-family: 'Pretendard-Regular';
+            font-weight: 700;
+            background-color: #fff;
+            left: 47%;
+            /* margin-bottom: px; */
+        }
+
+
+        .slider-2 {
+            height:500px;
+            position:relative;
+            /* margin: 0 auto; */
+            /* border-top: 1px solid #4A4F9F; */
+            /* top: 50%; */
+        }
+
+        .slider-2 .slides > div {
+            position:absolute;
+            top:0;
+            left:0;
+            width:75%;
+            height:100%;
+            margin: 0 170px;
+            background-position:center;
+            /* 이미지를 최대한 안짤리게 한다. */
+            background-size:cover;
+            /* 배경 반복 금지 */
+            background-repeat:no-repeat;
+            opacity:0;
+            transition: opacity 0.5s;
+        }
+
+        .slider-2 .slides > div.active {
+            opacity:1;
+        }
+
+        .slider-2 .page-nav {
+            position:absolute;
+            width:100%;
+            text-align:center;
+            bottom:0;
+            left:0;
+        }
+
+        .slider-2 .page-nav > div {
+            display:inline-block;
+            width:15px;
+            height:15px;
+            background-color:rgba(255,255,255,0.5);
+            border-radius:2px;
+            cursor:pointer;
+        }
+
+        .slider-2 .page-nav > div.active {
+            background-color:rgba(255,255,255,1);
+        }
+
+        .slider-2>.side-btns>div{
+            position:absolute;
+            top:0;
+            left:0;
+            width:30%;
+            height:100%;
+            cursor:pointer;
+            z-index:10;
+
+        }
+
+        .slider-2>.side-btns>div>span:active{
+            transform:translatey(-40%);
+        }
+        .slider-2>.side-btns>div:last-child{
+            left:auto;
+            right:0;
+        }
+
+        .slider-2>.side-btns>div>span{
+            position:absolute;
+            top:50%;
+            transform:translatey(-50%);
+            left:inherit;
+            right:inherit;
+            width:70px;
+            height:70px;
+            background-color:rgba(255,255,255,0.4);
+            border-radius:100%;
+            margin:0 10px;
+        }
+        .slider-2>.side-btns>div>span > i{
+            position:absolute;
+            top:50%;
+            left:50%;
+            font-size:3rem;
+            color:rgba(0,0,0,0.4);
+            transform:translateX(-70%) translateY(-50%);
+        }
+
+        .slider-2>.side-btns>div:last-child>span > i {
+            transform:translateX(-20%) translateY(-50%);
+        }
+
+        .sec06-img{
+            width: 75%;
+            margin: 0 auto;
+            margin-bottom: 100px;
+        }
+
+        .sec07-img{
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .sec08-img{
+            width: 75%;
+            margin: 0 auto;
+            margin-bottom: 200px;
+        }
+
+        #sec09{
+            font-family: 'Pretendard-Regular';
+            margin: 0 auto;
+            width: 75%;
+        }
+
+        #sec09 .tit3{
+            text-align: center;
+        }
+
+        #sec09 .tit3 .big{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        #sec09 .tit3 h5{
+            font-size: 40px;
+            font-weight: 700;
+            color: #0f1249;
+        }
+
+        #sec09 .tit3 .red,#sec09 .require{
+            color: #ed8578
+        }
+
+
+
+        
+        
+
+
+    </style>
+</head>
+<body>
+    
+    <header id="header">
+        <div class="logo-img">
+            <img src="./img/logo.png" alt="로고이미지">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#sec02">브랜드 소개</a></li>
+                <li><a href="#sec03">창업경쟁력</a></li>
+                <li><a href="#sec04">고객후기</a></li>
+                <li><a href="#sec05">메뉴</a></li>
+                <li><a href="#">인테리어</a></li>
+                <li><a href="#sec06">가맹절차</a></li>
+                <li><a href="#sec07">가맹비용</a></li>
+                <li><a href="#sec08">창업FAQ</a></li>
+                <li><a href="#sec09">가맹문의</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- 메인섹션 -->
+    <section id="sec01">
+        <div class="youtube">
+            <iframe width="910" height="512" src="https://www.youtube.com/embed/WgjkhdLjZ1w?si=Whjn1Yayl8k1GEuZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="sec01-txt">
+            <h2>
+                타코야끼에 <br>
+                <span>진심</span>이다!
+            </h2>
+        </div>
+        <div class="sec01-img1">
+            <img src="./img/sec01-img1.png" alt="섹션1이미지">
+        </div>
+        <div class="sec01-img2">
+            <img src="./img/sec01-img2.png" alt="섹션1이미지">
+        </div>
+        <div class="sec01-back">
+            <img src="./img/sec01-back.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- 브랜드소개 -->
+    <section id="sec02">
+        <div class="sec02-img">
+            <img src="./img/sec02-img.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- 창업경쟁력 -->
+    <section id="sec03">
+        <div class="sec03-img">
+            <img src="./img/sec03-img.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- 고객후기 -->
+    <section id="sec04">
+        <div class="sec04-img">
+            <img src="./img/sec04-img.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- 메뉴 -->
+     <section id="sec05">
+        <div class="line">
+            <img src="./img/line.jpg" alt="">
+        </div>
+        <div class="slider-2">
+    
+            <div class="side-btns">
+               <div><span><i class="fas fa-caret-left"></i></i></span></div>
+               <div><span><i class="fas fa-caret-right"></i></span></div>
+           </div>
+           
+           <div class="slides">
+               <div class="active" style="background-image:url(./img/set1.png);"></div>
+               <div style="background-image:url(./img/set2.png);"></div>
+               <div style="background-image:url(./img/set3.png);"></div>
+               <div style="background-image:url(./img/set4.png);"></div>
+           </div>
+           
+           <div class="page-nav">
+               <div class="active"></div>
+               <div></div>
+               <div></div>
+               <div></div>
+           </div>
+       </div>
+     </section>
+
+     <!-- 가맹절차 -->
+     <section id="sec06">
+        <div class="sec06-img">
+            <img src="./img/sec06-img.jpg" alt="">
+        </div>
+     </section>
+
+     <!-- 가맹비용 -->
+     <section id="sec07">
+        <div class="sec07-img">
+            <img src="./img/sec07-img.jpg" alt="">
+        </div>
+     </section>
+
+     <!-- 창업FAQ -->
+     <section id="sec08">
+        <div class="sec08-img">
+            <img src="./img/sec08-img.jpg" alt="">
+        </div>
+     </section>
+
+     <section id="sec09">
+        <div class="inbox">
+			<div class="tit3">
+				<div class="big">진심타코야끼의 파트너</div>
+				<h5><strong class="red">가맹점</strong> 모집</h5>
+			</div>
+			<div class="form_box">
+				<form name="fwrite" id="fwrite" action="http://10billioncoffee.co.kr/bbs/write_update.php" onsubmit="return fwrite_submit(this);" method="post" enctype="multipart/form-data" autocomplete="off">
+					<input type="hidden" name="uid" value="2024012220463628">
+					<input type="hidden" name="w" value="">
+					<input type="hidden" name="bo_table" value="franchise">
+					<input type="hidden" name="wr_id" value="0">
+					<input type="hidden" name="urls" value="/">
+					<input type="hidden" name="wr_10" value="https://www.google.com/">
+					<input type="hidden" name="nt_detail" value="">
+					<input type="hidden" name="sca" value="">
+					<input type="hidden" name="sfl" value="">
+					<input type="hidden" name="stx" value="">
+					<input type="hidden" name="spt" value="">
+					<input type="hidden" name="sst" value="">
+					<input type="hidden" name="sod" value="">
+					<input type="hidden" name="page" value="">
+					<input type="hidden" name="wr_subject" value="창업문의">
+					 
+					<input type="hidden" name="cap" value="1">
+					<div class="policy">
+																		<p class="chk_box2 agree_chk2">
+							<input type="checkbox" checked required  value="1" id="agree" class="selec_chk" name="agree">
+							<label for="agree">
+								<span><i class="fa fa-check" aria-hidden="true"></i></span>
+								개인정보취급방침을 읽었으며 이에 동의합니다.
+								 
+								
+							</label>
+
+							<a href="/privacy.php" onclick="win_profile(this.href); return false;">전문보기</a>
+						</p>
+					</div>
+					<div class="inquiry_form">
+						<h5 class="gm_500">상담자 정보<p><span class="require">●</span>필수입력항목</p></h5>
+						<table>
+							<colgroup>
+								<col width="25%">
+								<col width="75%">
+							</colgroup>
+							 
+							<tr>
+								<th><span class="require">●</span>성함</th>
+								<td><input type="text" name="wr_name" class="full_input  "  placeholder="성함"/></td>
+							</tr>
+							<tr>
+								<th><span class="require">●</span>연락처</th>
+								<td class="phone">
+									<select name="wr_1" id=""   >
+									<option value="">선택하세요</option>
+								<option value="010" >010</option>
+								<option value="02">02</option>
+								<option value="031">031</option>
+								<option value="032">032</option>
+								<option value="033">033</option>
+								<option value="041">041</option>
+								<option value="042">042</option>
+								<option value="043">043</option>
+								<option value="044">044</option>
+								<option value="051">051</option>
+								<option value="052">052</option>
+								<option value="053">053</option>
+								<option value="054">054</option>
+								<option value="055">055</option>
+								<option value="061">061</option>
+								<option value="062">062</option>
+								<option value="063">063</option>
+								<option value="064">064</option>
+								<option value="0502">0502</option>
+								<option value="0505">0505</option>
+								<option value="0506">0506</option>
+								<option value="070">070</option>
+									</select>
+									<span class="type c">-</span>
+									<input type="text" name="wr_2" class="hp1 hp  " maxlength="4"    placeholder="숫자입력"      >
+									<span class="type c">-</span>
+									<input type="text" name="wr_3" class="hp2    " maxlength="4"   placeholder="숫자입력"     >
+								</td>
+							</tr>
+						 
+							<tr>
+								<th>창업희망지역</th>
+								<td><input type="text" name="wr_4" class="full_input  "    placeholder="창업희망지역"/></td>
+							</tr>
+							<tr>
+							 
+							 
+							<tr >
+								<th class="top">문의내용</th>
+								<td class="">
+									<textarea name="wr_content"></textarea>
+								</td>
+							</tr>
+						 
+						</table>
+						 <button type="submit" accesskey="s"   class="submit    trans" >신청하기</button>
+                        
+                       <!-- <button type="submit" accesskey="s"   class="submit    trans" onclick="gtag_report_conversion('/index2.php?d=메인신청');">신청하기</button>-->
+                        
+					</div>
+                    
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+ 
+	function fwrite_submit(f){
+		if (!f.wr_name.value || f.wr_name.value == '') {
+            alert("성함을 입력해주세요");
+            f.wr_name.focus();
+            return false;
+        }
+		
+		if (!f.wr_1.value || f.wr_1.value == '') {
+            alert("전화번호를 선택해주세요");
+            f.wr_1.focus();
+            return false;
+        }
+		
+		if (!f.wr_2.value || f.wr_2.value == '') {
+            alert("전화번호를 입력해주세요");
+            f.wr_2.focus();
+            return false;
+        }
+		
+		if (!f.wr_3.value || f.wr_3.value == '') {
+            alert("전화번호를 입력해주세요");
+            f.wr_3.focus();
+            return false;
+        }
+		 
+		 if($("#agree").is(":checked") == false){
+			 alert("개인정보수집에 동의해주세요");
+			 return false;
+		 }
+			 
+
+		return true;
+	}
+	
+	
+	function fwrite_submit2(f){
+		if (!f.wr_name.value || f.wr_name.value == '') {
+            alert("성함을 입력해주세요");
+            f.wr_name.focus();
+            return false;
+        }
+		
+		if (!f.wr_1.value || f.wr_1.value == '') {
+            alert("전화번호를 입력해주세요");
+            f.wr_1.focus();
+            return false;
+        }
+		
+	 
+		 if($("#agree2").is(":checked") == false){
+			 alert("개인정보수집에 동의해주세요");
+			 return false;
+		 }
+			 
+		 
+		return true;
+	}
+	
+	
+	 
+    $(function() {
+        $("#top_btn,.fix_box span").on("click", function() {
+            $("html, body").animate({scrollTop:0}, '500');
+            return false;
+        });
+    });
+    
+    $(window).scroll(function() {
+		target = $(".gnb a").eq(0).attr('href');
+	    num = $("." + target).offset().top;
+		  $(".gnb a").removeClass("active");
+	 
+        len = $(".gnb a").not('.no').length;
+        for (i = 0; i < len; i++) {
+            target = $(".gnb a").eq(i).attr('href');
+            target = $("." + target);
+        
+			 
+			target_h = target.height();
+			target_end = target_h +target.offset().top;
+		 
+            if (  ($(this).scrollTop() >= target.offset().top-75 && $(this).scrollTop() <= target_end)) {
+              
+				
+                $(".gnb a").eq(i).addClass("active");
+				 
+				 
+				break;
+            }
+        }
+    });
+
+ 
+</script>
+     </section>
+
+
+
+
+     <script>
+        $('.slider-2 .page-nav > div').click(function() {
+    
+    var $this = $(this);
+    var $pagenav = $this.parent()
+    var $current = $pagenav.find('.active');
+    
+    $current.removeClass('active');
+    $this.addClass('active');
+
+    var index = $this.index();
+    var $슬라이더 = $this.closest('.slider-2');
+    
+    $슬라이더.find('.slides > div.active').removeClass('active');
+    $슬라이더.find('.slides > div').eq(index).addClass('active');
+    
+    
+});
+
+$('.slider-2 > .side-btns > div:first-child').click(function() {
+    var $this = $(this);
+    var $slider = $this.closest('.slider-2');
+    
+    var $current = $slider.find('.page-nav > div.active');
+    var $post = $current.prev();
+    
+    if ( $post.length == 0 ) {
+        $post = $slider.find('.page-nav > div:last-child');
+    }
+    
+    $post.click();
+});
+
+$('.slider-2 > .side-btns > div:last-child').click(function() {
+    var $this = $(this);
+    var $slider = $this.closest('.slider-2');
+    
+    var $current = $slider.find('.page-nav > div.active');
+    var $post = $current.next();
+    
+    if ( $post.length == 0 ) {
+        $post = $slider.find('.page-nav > div:first-child');
+    }
+    
+    $post.click();
+});
+     </script>
+
+    
+      
+      
+
+
+    
+     
+</body>
+</html>
