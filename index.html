@@ -25,13 +25,16 @@
             /* border: 1px solid #000; */
             position: fixed;
             width: 100%;
+            height: 80px;
             z-index: 999;
+            /* align-items: center; */
         }
 
         .logo-img img{
             width: 35%;
             margin-left: 50%;
-            margin-top: 20px;
+            margin-top: 15px;
+            /* padding-bottom: 5px; */
         }
 
         .nav ul{
@@ -49,7 +52,7 @@
             width: 100%;
             height: 920px;
             margin: 0 auto;
-            background-color: #0f1249;
+            /* background-color: #0f1249; */
         }
 
         .youtube{
@@ -71,6 +74,7 @@
             color: #ed8578;
             font-weight: 900;
             font-size: 80px;
+            animation: jisim 1.5s infinite;
         }
 
         .sec01-img1{
@@ -236,29 +240,275 @@
         #sec09{
             font-family: 'Pretendard-Regular';
             margin: 0 auto;
-            width: 75%;
+            width: 100%;
         }
 
-        #sec09 .tit3{
+        .sec09-maintxt .inbox{
+            margin-bottom: 30px;
+        }
+
+        .sec09-maintxt .tit3{
             text-align: center;
         }
 
-        #sec09 .tit3 .big{
+        .sec09-maintxt .tit3 .big{
             font-size: 20px;
             margin-bottom: 10px;
         }
 
-        #sec09 .tit3 h5{
+        .sec09-maintxt .tit3 h5{
             font-size: 40px;
             font-weight: 700;
             color: #0f1249;
         }
 
-        #sec09 .tit3 .red,#sec09 .require{
+        .sec09-maintxt .tit3 .red,#sec09 .require{
             color: #ed8578
         }
 
+        #sec09 .container{
+            color: #505050;
+            background-color: #F6DCD9;
+            width: 100%;
+        }
 
+        #sec09 .info{
+            display: flex;
+            margin: 0 550px;
+        }
+
+        #sec09 h3{
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 50px;
+            margin-left: 550px;
+            padding-top: 20px;
+        }
+
+        #sec09 h3 b{
+            font-size: 15px;
+            margin-left: 5px;
+            font-weight: 500;
+        }
+
+        #sec09 .impo{
+            color: red;
+            font-size: 15px;
+        }
+
+        /* #sec09 h4{
+            padding-left: 20px;
+        } */
+
+        #name{
+            margin-left: 150px;
+            width: 500px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ffffff;
+        }
+
+        #tel{
+            margin-left: 135px;
+            /* margin-right: 30px; */
+            width: 143px;
+            padding: 10px;
+            border: 1px solid #ffffff;
+            margin-bottom: 20px;
+        }
+
+        #tel2{
+            /* margin-right: 30px; */
+            width: 162px;
+            padding: 10px;
+            border: 1px solid #ffffff;
+            margin-bottom: 20px;
+        }
+
+        #tel3{
+            width: 163px;
+            padding: 10px;
+            border: 1px solid #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .info .dash{
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+
+        #hope{
+            margin-left: 105px;
+            margin-bottom: 20px;
+            width: 500px;
+            padding: 10px;
+            border: 1px solid #ffffff;
+        }
+
+        #contact{
+            margin-left: 133px;
+            margin-bottom: 20px;
+            width: 500px;
+            padding: 70px;
+            border: 1px solid #ffffff;
+        }
+
+        .yes{
+            background-color: #fff;
+            width: 500px;
+            padding: 15px 10px;
+            margin-left: 739px;
+            color: #000;
+            font-size: 12px;
+            /* font-weight: 700; */
+            margin-bottom: 30px;
+        }
+
+        .ok{
+            text-align: center;
+            font-size: 13px;
+            /* margin-left: 450px; */
+        }
+
+        .ok .good{
+            margin-left: 10px;
+            font-weight: 700;
+            /* margin-top: -50px; */
+        }
+
+        input[type=checkbox] {
+            transform : scale(1.5);
+            margin-right: 5px;
+            margin-left: 40px;
+            margin-bottom: 20px;
+            border: 1px solid #fff;
+        }
+
+        .btn{
+            padding-bottom: 50px;
+        }
+
+        .btn h5{
+            width: 250px;
+            padding: 10px 0;
+            font-size: 30px;
+            font-weight: 700;
+            text-align: center;
+            background-color: #F09999;
+            margin: 0 auto;
+            margin-left: 840px;
+            color: #fff;
+        }
+
+        .bot-banner{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0F1249;
+            color: #fff;
+            font-weight: 700;
+            padding: 30px;
+        }
+
+        .bot-txt h6{
+            font-size: 35px;
+            margin-right: 30px;
+            animation: jisim 1.5s infinite;
+        }
+
+        .bot-number{
+            font-size: 25px;
+            color: #F09999;
+            margin-right: 20px;
+        }
+
+        .bot-tel .num{
+            width: 130px;
+            padding: 5px;
+            padding-left: 20px;
+            margin-right: 5px;
+            color: #787878;
+            font-weight: 700;
+        }
+
+        .bot-chk{
+            margin-top: 15px;
+            margin-right: 50px;
+        }
+
+        .bot-chk #cb{
+            margin-right: 15px;
+        }
+
+        .bot-btn p{
+            background-color: #F09999;
+            padding: 7px 30px;
+            font-size: 20px;
+        }
+
+        #footer{
+            display: flex;
+            background-color: #F09999;
+            color: #000;
+            justify-content: center;
+            padding-top: 10px;
+            padding-bottom: 130px;
+        }
+
+        #footer .footer-logo{
+            width: 15%;
+            margin-right: 130px;
+        }
+
+        #footer .footer-logo img{
+            /* width:%; */
+            padding-top: 70px;
+        }
+
+        #footer .footer-txt{
+            line-height: 20px;
+            font-weight: 500;
+            padding-top: 32px;
+            font-size: 13px;
+            margin-right: 50px;
+        }
+
+        #footer .footer-img{
+            font-weight: 500;
+            font-size: 13px;
+            margin-left: 50px;
+        }
+
+        #footer .footer-img img{
+            width: 50%;
+        }
+
+
+        @keyframes jisim{
+            0%{
+                color: #ed8578;
+            }
+
+            25%{
+                color: yellow;
+            }
+
+            50%{
+                color: #58CCFF;
+            }
+
+            75%{
+                color: yellow;
+            }
+
+            100%{
+                color: #ed8578;
+            }
+        }
 
         
         
@@ -270,7 +520,7 @@
     
     <header id="header">
         <div class="logo-img">
-            <img src="./img/logo.png" alt="로고이미지">
+            <a href="./index.html"><img src="./img/logo.png" alt="로고이미지"></a>
         </div>
         <div class="nav">
             <ul>
@@ -379,214 +629,97 @@
         </div>
      </section>
 
-     <section id="sec09">
+     <div class="sec09-maintxt">
         <div class="inbox">
-			<div class="tit3">
-				<div class="big">진심타코야끼의 파트너</div>
-				<h5><strong class="red">가맹점</strong> 모집</h5>
-			</div>
-			<div class="form_box">
-				<form name="fwrite" id="fwrite" action="http://10billioncoffee.co.kr/bbs/write_update.php" onsubmit="return fwrite_submit(this);" method="post" enctype="multipart/form-data" autocomplete="off">
-					<input type="hidden" name="uid" value="2024012220463628">
-					<input type="hidden" name="w" value="">
-					<input type="hidden" name="bo_table" value="franchise">
-					<input type="hidden" name="wr_id" value="0">
-					<input type="hidden" name="urls" value="/">
-					<input type="hidden" name="wr_10" value="https://www.google.com/">
-					<input type="hidden" name="nt_detail" value="">
-					<input type="hidden" name="sca" value="">
-					<input type="hidden" name="sfl" value="">
-					<input type="hidden" name="stx" value="">
-					<input type="hidden" name="spt" value="">
-					<input type="hidden" name="sst" value="">
-					<input type="hidden" name="sod" value="">
-					<input type="hidden" name="page" value="">
-					<input type="hidden" name="wr_subject" value="창업문의">
-					 
-					<input type="hidden" name="cap" value="1">
-					<div class="policy">
-																		<p class="chk_box2 agree_chk2">
-							<input type="checkbox" checked required  value="1" id="agree" class="selec_chk" name="agree">
-							<label for="agree">
-								<span><i class="fa fa-check" aria-hidden="true"></i></span>
-								개인정보취급방침을 읽었으며 이에 동의합니다.
-								 
-								
-							</label>
+            <div class="tit3">
+                <div class="big">진심타코야끼의 파트너</div>
+                <h5><strong class="red">가맹점</strong> 모집</h5>
+            </div>
+        </div>
+    </div>
+     <section id="sec09">
+            <div class="container">
+                <h3>상담자 정보 <span class="impo">*</span><b>필수입력정보</b></h3>
+                <div class="info">
+                    <h4>성함 <span class="impo">*</span></h4>
+                    <input type="text" name="name" id="name" placeholder="성함">
+                </div>
+                <div class="info">
+                    <h4>연락처 <span class="impo">*</span></h4>
+                    <input type="text" name="tel" id="tel" placeholder="숫자입력"><span class="dash">-</span><input type="text" name="tel" id="tel2" placeholder="숫자입력"><span class="dash">-</span><input type="text" name="tel" id="tel3" placeholder="숫자입력">
+                </div>
+                <div class="info">
+                    <h4>창업희망지역</h4>
+                    <input type="text" name="hope" id="hope" placeholder="창업희망지역">
+                </div>
+                <div class="info">
+                    <h4>문의내용</h4>
+                    <input type="text" name="contact" id="contact" placeholder="">
+                </div>
+                <div class="yes">
+                    <p>
+                        개인정보 수집 및 이용동의 <br>
+                        처리목적 : 서비스 제공관련 고객상담, 민원사항 확인 및 처리 <br>
+                        처리(수집) 항목 : 이름, 전화번호 <br>
+                        보유기간 : 목적 달성 시까지 <br>
+                        상기의 개인정보 수집 및 이용을 거부하실 수 있으나 거부하시는 경우 서비스 이용이 불가합니다. <br>
+                    </p>
+                </div>
+                <div class="ok">
+                    <input type="checkbox" name="chk" id="chk" class="chk"><span class="good">개인정보취급방침을 읽었으며 이에 동의합니다.</span>
+                </div>
+                <div class="btn">
+                    <h5>신청하기</h5>
+                </div>
+            </div>
+			
 
-							<a href="/privacy.php" onclick="win_profile(this.href); return false;">전문보기</a>
-						</p>
-					</div>
-					<div class="inquiry_form">
-						<h5 class="gm_500">상담자 정보<p><span class="require">●</span>필수입력항목</p></h5>
-						<table>
-							<colgroup>
-								<col width="25%">
-								<col width="75%">
-							</colgroup>
-							 
-							<tr>
-								<th><span class="require">●</span>성함</th>
-								<td><input type="text" name="wr_name" class="full_input  "  placeholder="성함"/></td>
-							</tr>
-							<tr>
-								<th><span class="require">●</span>연락처</th>
-								<td class="phone">
-									<select name="wr_1" id=""   >
-									<option value="">선택하세요</option>
-								<option value="010" >010</option>
-								<option value="02">02</option>
-								<option value="031">031</option>
-								<option value="032">032</option>
-								<option value="033">033</option>
-								<option value="041">041</option>
-								<option value="042">042</option>
-								<option value="043">043</option>
-								<option value="044">044</option>
-								<option value="051">051</option>
-								<option value="052">052</option>
-								<option value="053">053</option>
-								<option value="054">054</option>
-								<option value="055">055</option>
-								<option value="061">061</option>
-								<option value="062">062</option>
-								<option value="063">063</option>
-								<option value="064">064</option>
-								<option value="0502">0502</option>
-								<option value="0505">0505</option>
-								<option value="0506">0506</option>
-								<option value="070">070</option>
-									</select>
-									<span class="type c">-</span>
-									<input type="text" name="wr_2" class="hp1 hp  " maxlength="4"    placeholder="숫자입력"      >
-									<span class="type c">-</span>
-									<input type="text" name="wr_3" class="hp2    " maxlength="4"   placeholder="숫자입력"     >
-								</td>
-							</tr>
-						 
-							<tr>
-								<th>창업희망지역</th>
-								<td><input type="text" name="wr_4" class="full_input  "    placeholder="창업희망지역"/></td>
-							</tr>
-							<tr>
-							 
-							 
-							<tr >
-								<th class="top">문의내용</th>
-								<td class="">
-									<textarea name="wr_content"></textarea>
-								</td>
-							</tr>
-						 
-						</table>
-						 <button type="submit" accesskey="s"   class="submit    trans" >신청하기</button>
-                        
-                       <!-- <button type="submit" accesskey="s"   class="submit    trans" onclick="gtag_report_conversion('/index2.php?d=메인신청');">신청하기</button>-->
-                        
-					</div>
-                    
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
-<script>
- 
-	function fwrite_submit(f){
-		if (!f.wr_name.value || f.wr_name.value == '') {
-            alert("성함을 입력해주세요");
-            f.wr_name.focus();
-            return false;
-        }
-		
-		if (!f.wr_1.value || f.wr_1.value == '') {
-            alert("전화번호를 선택해주세요");
-            f.wr_1.focus();
-            return false;
-        }
-		
-		if (!f.wr_2.value || f.wr_2.value == '') {
-            alert("전화번호를 입력해주세요");
-            f.wr_2.focus();
-            return false;
-        }
-		
-		if (!f.wr_3.value || f.wr_3.value == '') {
-            alert("전화번호를 입력해주세요");
-            f.wr_3.focus();
-            return false;
-        }
-		 
-		 if($("#agree").is(":checked") == false){
-			 alert("개인정보수집에 동의해주세요");
-			 return false;
-		 }
-			 
-
-		return true;
-	}
-	
-	
-	function fwrite_submit2(f){
-		if (!f.wr_name.value || f.wr_name.value == '') {
-            alert("성함을 입력해주세요");
-            f.wr_name.focus();
-            return false;
-        }
-		
-		if (!f.wr_1.value || f.wr_1.value == '') {
-            alert("전화번호를 입력해주세요");
-            f.wr_1.focus();
-            return false;
-        }
-		
-	 
-		 if($("#agree2").is(":checked") == false){
-			 alert("개인정보수집에 동의해주세요");
-			 return false;
-		 }
-			 
-		 
-		return true;
-	}
-	
-	
-	 
-    $(function() {
-        $("#top_btn,.fix_box span").on("click", function() {
-            $("html, body").animate({scrollTop:0}, '500');
-            return false;
-        });
-    });
-    
-    $(window).scroll(function() {
-		target = $(".gnb a").eq(0).attr('href');
-	    num = $("." + target).offset().top;
-		  $(".gnb a").removeClass("active");
-	 
-        len = $(".gnb a").not('.no').length;
-        for (i = 0; i < len; i++) {
-            target = $(".gnb a").eq(i).attr('href');
-            target = $("." + target);
-        
-			 
-			target_h = target.height();
-			target_end = target_h +target.offset().top;
-		 
-            if (  ($(this).scrollTop() >= target.offset().top-75 && $(this).scrollTop() <= target_end)) {
-              
-				
-                $(".gnb a").eq(i).addClass("active");
-				 
-				 
-				break;
-            }
-        }
-    });
-
- 
-</script>
      </section>
+
+
+     <div class="bot-banner">
+        <div class="bot-txt">
+            <h6>창업상담</h6>
+        </div>
+        <div class="bot-number">
+            010-3075-2987
+        </div>
+        <div class="bot-tel">
+            <input type="tel" name="num1" id="num1" class="num" placeholder="이름">
+            <input type="tel" name="num2" id="num2" class="num" placeholder="희망지역">
+            <input type="tel" name="num3" id="num3" class="num" placeholder="전화번호">
+        </div>
+        <div class="bot-chk">
+            <input type="checkbox" name="cb" id="cb"><span>개인정보수집 동의</span>
+        </div>
+        <div class="bot-btn">
+            <p>신청하기</p>
+        </div>
+     </div>
+
+     <footer id="footer">
+        <div class="footer-logo">
+            <img src="./img/footer-logo.png" alt="하단로고">
+        </div>
+        <div class="footer-txt">
+            <ul>
+                <li>상호명 : (주)진심청년</li>
+                <li>대표자명 : 최원우</li>
+                <li>주소 : 경기도 수원시 영통구 하동 1016 A동 1814호</li>
+                <li>대표전화 : 010-3075-2987</li>
+                <li>사업자등록번호 : 789-81-02610</li>
+                <li>e-mail : kcjs9198@naver.com</li>
+                <li>개인정보 보호책임자 : 최원우</li>
+            </ul>
+        </div>
+        <div class="footer-img">
+            <img src="./img/footer-img.png" alt="하단이미지">
+            <p>
+                모든 컨텐츠의 무단복제 및 재판매를 금지합니다. <br>
+                Copyright(c) 2022~ by (주)진심청년 All Rights Reserved.
+            </p>
+        </div>
+     </footer>
 
 
 
